@@ -4,35 +4,136 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Sotix</title>
   </head>
 
   <body>
-    <main>
+    <main class="container-fluid section our-services-container">
+      <section class="section pt-12">
+        <div class="justify-content-end d-flex">
+          <h2 class="section-title text-right section-title-underline d-inline-flex">
+            <span class="section-title_green">НАШИ</span>&nbspУСЛУГИ
+          </h2>
+        </div>
+
+        <div class="how-we-work-container d-flex justify-content-center align-items-center">
+          <div class="mr-5">
+            <img src="media/images/our_services_1.png" />
+            <p class="text-center">Диагностика</p>
+          </div>
+          <div class="mr-5">
+            <img src="media/images/our_services_2.png" />
+            <p class="text-center">Ремонт <br>смартфонов</p>
+          </div>
+          <div class="mr-5">
+            <img src="media/images/our_services_3.png" />
+            <p class="text-center">Восстановление <br>и ремонт дисплеев</p>
+          </div>
+          <div class="mr-5">
+            <img src="media/images/our_services_4.png" />
+            <p class="text-center">Ремонт <br>планшетов</p>
+          </div>
+          <div>
+            <img src="media/images/our_services_5.png" />
+            <p class="text-center">Ремонт <br>ноутбуков</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section">
-        <h1 class="section-title">КАК НАС НАЙТИ</h1>
+        <div>
+          <h2 class="section-title text-right section-title-underline d-inline-flex">
+            КАК&nbsp<span class="section-title_green">МЫ</span>&nbspРАБОТАЕМ?
+          </h2>
+        </div>
+
+        <div class="how-we-work-container">
+          <img class="icon" src="media/svg/How_we_work_step_1.svg" />
+          <img class="icon" src="media/svg/How_we_work_step_2.svg" />
+          <img class="icon" src="media/svg/How_we_work_step_3.svg" />
+          <img class="icon" src="media/svg/How_we_work_step_4.svg" />
+        </div>
+      </section>
+
+      <section class="section pt-12">
+        <div class="section-content">
+          <div class="mt-14">
+            <div style="width: 750px; height: 596px; background-color: #C4C4C4"></div>
+          </div>
+
+          <div class="mt-4">
+            <div class="justify-content-end d-flex">
+              <h2 class="section-title text-right section-title-underline d-inline">
+                ПОЧЕМУ ИМЕННО<br>
+                <span class="section-title_green">МЫ?</span>
+              </h2>
+            </div>
+            <h3 class="ml-3">СОБСТВЕННОЕ ОБОРУДОВАНИЕ</h3>
+            <p class="ml-3 text-justify">В отличии от другим мы регулярно вкладываем средства в оборудование. Современные технологии позволяют нам самим проводить сверх сложные ремонтные работы, а не "перезаказывать" у других, что, поверьте, существенно снижает стоимость вашего ремонта.</p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center pb-15 mt-6">
+          <div class="circle circle__text mr-6 d-flex justify-content-center align-items-center">1</div>
+          <div class="circle circle__text mr-6 d-flex justify-content-center align-items-center">2</div>
+          <div class="circle circle__text mr-6 d-flex justify-content-center align-items-center">3</div>
+          <div class="circle circle__text mr-6 d-flex justify-content-center align-items-center">4</div>
+          <div class="circle circle__text d-flex justify-content-center align-items-center">5</div>
+        </div>
+      </section>
+
+      <section class="section pt-8 pb-5">
+        <h1 class="section-title section-title-underline">КАК&nbsp<span class="section-title_green">НАС</span>&nbspНАЙТИ</h1>
+
+        <div class="section-content d-flex justify-content-between">
+          <div class="mt-14">
+            <div style="width: 750px; height: 596px; background-color: #C4C4C4"></div>
+          </div>
+
+          <div style="width: 600px" class="mt-4">
+            <h2 class="fw-800">АДРЕС</h2>
+            <p class="fs-24">Наш офис находиться по адресу: город Гродно, улица Славинского 4/66</p>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="328" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%204%2F66&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://torrent9-fr.com"></a></div><style>.mapouter{position:relative;text-align:right;height:328px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:451px;width:600px;}</style></div>
+            <h2 class="fw-800">РАСПИСАНИЕ</h2>
+            <p class="fs-24">
+              Пн-пт: 09.00-18.00
+              <br>Сб: 09.00-15.00
+              <br>Вс: выходной.
+            </p>
+            <h2 class="fw-800">КОНТАКТЫ</h2>
+            <p class="fs-24">+375-33-377-74-40</p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container-fluid">
       <div>
-        <p class="footer__developer">development T&M</p>
+        <p class="footer__developer m-0">
+          <span>development</span>
+          <br>
+          <span>T&M</span>
+        </p>
       </div>
 
       <div class="footer__contact">
-        <div class="footer__address">
+        <div class="footer__address mr-5">
           <span>+375-33-377-74-40</span>
           <br /><span>г. Гродно, Славинского 4/66</span>
         </div>
 
-        <div class="footer_social">
+        <div class="footer_social d-flex">
           <img class="icon" src="media/svg/Vk_Logo.svg" />
           <img class="icon" src="media/svg/YouTube_Logo.svg" />
           <img class="icon" src="media/svg/Instagram_Logo.svg" />
         </div>
 
-        <p class="footer_copyright">SOTIX 2020</p>
+        <div class="d-flex align-items-center">
+          <p class="footer_copyright">&copySOTIX 2020</p>
+        </div>
       </div>
     </footer>
   </body>
