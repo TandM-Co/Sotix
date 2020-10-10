@@ -1,0 +1,62 @@
+:root {
+  --black: #1F1F1F;
+  --green: #259136;
+  --green-light: #2EC046;
+  --white: #FFFFFF;
+  --icon-bg: #6D6D6D;
+  --icon-bg-hover: #2EC046;
+}
+
+body {
+  color: var(--white);
+}
+
+.section {
+  background: linear-gradient(90deg, #455A64 0.01%, rgba(31, 31, 31, 0.85) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 90px;
+}
+
+.icon:hover {
+  filter: invert(65%) sepia(14%) saturate(4629%) hue-rotate(81deg) brightness(97%) contrast(72%);
+}
+
+.contact-info {
+
+}
+
+.social {
+
+}
+
+.footer {
+  background-color: var(--black);
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contact {
+  display: flex;
+}
+
+.footer__address {
+  text-align: end;
+}
+
+.footer_social > img {
+  margin: 0 10px 0 10px;
+}
+
+.footer_copyright {
+  margin: 0 30px 0 30px;
+}
+
+.footer__developer {
+
+}
