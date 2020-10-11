@@ -56,8 +56,26 @@ body {
   background: linear-gradient(90deg, #455A64 0.01%, rgba(31, 31, 31, 0.85) 99.99%, rgba(255, 255, 255, 0) 100%);
 }
 
+.btn {
+  padding: 20px;
+  color: var(--white) !important;
+  border-radius: 40px;
+}
+
 .section {
   /*background: linear-gradient(90deg, #455A64 0.01%, rgba(31, 31, 31, 0.85) 99.99%, rgba(255, 255, 255, 0) 100%);*/
+}
+
+.presentation-section {
+  background-image: url("media/images/BG 1.png");
+}
+
+.presentation-section__logo {
+  padding-top: 50px;
+}
+
+.presentation-section__contacts {
+  flex-direction: column;
 }
 
 .section-title {
