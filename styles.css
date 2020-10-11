@@ -57,9 +57,10 @@ body {
 }
 
 .btn {
-  padding: 20px;
+  padding: 10px 30px !important;
   color: var(--white) !important;
-  border-radius: 40px;
+  border: 2px solid green !important;
+  border-radius: 40px !important;
 }
 
 .section {
@@ -68,6 +69,7 @@ body {
 
 .presentation-section {
   background-image: url("media/images/BG 1.png");
+  padding-bottom: 260px;
 }
 
 .presentation-section__logo {
@@ -76,6 +78,10 @@ body {
 
 .presentation-section__contacts {
   flex-direction: column;
+}
+
+.presentation-section__btn {
+  margin-top: 90px;
 }
 
 .section-title {
@@ -138,9 +144,16 @@ body {
   font-size: 24px;
 }
 
+.how-we-work-content {
+  background-color: var(--work-step);
+  flex-wrap: wrap;
+  min-height: 330px;
+}
+
 .how-we-work-container {
   background-color: var(--work-step);
-  height: 330px;
+  flex-wrap: wrap;
+  min-height: 330px;
 }
 
 .how-we-work-container__step {
