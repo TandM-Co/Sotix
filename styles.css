@@ -181,3 +181,12 @@ body {
   font-size: 36px;
 }
 
+.mapouter {
+  width: auto !important;
+}
+
+@media (max-width: 670px) {
+  .section-title {
+    font-size: 25px;
+  }
+}
