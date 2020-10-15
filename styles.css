@@ -53,6 +53,7 @@
 body {
   color: var(--white) !important;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
   background: linear-gradient(90deg, #455A64 0.01%, rgba(31, 31, 31, 0.85) 99.99%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -144,6 +145,19 @@ body {
   font-size: 24px;
 }
 
+.our-services-content {
+  background-color: var(--work-step);
+  flex-wrap: wrap;
+  min-height: 330px;
+}
+
+.our-services-content__item {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .how-we-work-content {
   background-color: var(--work-step);
   flex-wrap: wrap;
@@ -154,6 +168,12 @@ body {
   background-color: var(--work-step);
   flex-wrap: wrap;
   min-height: 330px;
+  display: flex;
+  justify-content: center;
+}
+
+.how-we-work-container__item {
+
 }
 
 .how-we-work-container__step {
@@ -181,12 +201,99 @@ body {
   font-size: 36px;
 }
 
-.mapouter {
-  width: auto !important;
+.mapouter{
+  position: relative;
+  text-align: right;
+  height: 328px;
+  idth: 100% !important;
+}
+
+.mapouter iframe {
+  width: 100% !important;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 451px;
 }
 
 @media (max-width: 670px) {
   .section-title {
     font-size: 25px;
+  }
+}
+
+.swing {
+  -webkit-animation: swing 2s ease;
+  animation: swing 2s ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes swing {
+  15%
+  {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30%
+  {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50%
+  {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65%
+  {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80%
+  {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100%
+  {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing
+{
+  15%
+  {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30%
+  {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50%
+  {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65%
+  {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80%
+  {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100%
+  {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
