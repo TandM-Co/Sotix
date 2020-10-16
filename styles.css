@@ -297,3 +297,7 @@ body {
     transform: translateX(0);
   }
 }
+
+.carousel-cell:before {
+  content: none !important;
+}
