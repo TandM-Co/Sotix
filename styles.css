@@ -157,7 +157,7 @@ body {
 
 /*#region our-services*/
 .our-services-content {
-  background-color: var(--work-step);
+  background-color: var(--work-step-bg);
   flex-wrap: wrap;
   min-height: 330px;
 }
@@ -177,13 +177,13 @@ body {
 
 /*#region how-we-work*/
 .how-we-work-content {
-  background-color: var(--work-step);
+  background-color: var(--work-step-bg);
   flex-wrap: wrap;
   min-height: 330px;
 }
 
 .how-we-work-container {
-  background-color: var(--work-step);
+  background-color: var(--work-step-bg);
   flex-wrap: wrap;
   min-height: 330px;
   display: flex;
