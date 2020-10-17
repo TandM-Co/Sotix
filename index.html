@@ -20,21 +20,45 @@
   <meta property="og:image:width" content="162">
   <meta property="og:image:height" content="51">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./lib/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="./lib/owl-carousel/owl.theme.default.min.css">
   <script defer src="./lib/jquery.min.js"></script>
   <script defer src="./lib/owl-carousel/owl.carousel.min.js"></script>
+  <script defer src="./lib/bootstrap/js/bootstrap.min.js"></script>
   <script defer src="script.js"></script>
 </head>
 
 <body>
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label style="color: black" for="exampleInputEmail1">Номер телефона</label>
+          <input oninput="phoneValidation(event)" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Номер телефона">
+          <small id="emailHelp" class="form-text text-muted">Оставьте номер телефона и мы свяжемся с вами</small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-primary" href="tel:375333777440">Позвонить</a>
+        <button type="button" class="btn btn-secondary" disabled id="leaveRequest">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section class="presentation-section container-fluid ">
   <header class="d-flex justify-content-between presentation-section-container">
     <h1 class="presentation-section__logo">SOTIX</h1>
@@ -61,7 +85,7 @@
       <p>
         Заберем, Починим, Привезём ваш: <br>телефон, планшет, ноутбук <br>поменяем экран на 30% дешевле <br>конкурентов
       </p>
-      <button class="btn presentation-section__btn">
+      <button class="presentation-section__btn" data-toggle="modal" data-target="#modal">
         заказать услугу
       </button>
     </div>
@@ -201,9 +225,14 @@
         <p class="fs-24">Наш офис находиться по адресу: город Гродно, улица Славинского 4/66</p>
         <div class="mapouter">
           <div class="gmap_canvas">
-            <iframe width="600" height="328" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%204%2F66&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe
+              title="Map"
+              width="600"
+              height="328"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D0%BB%D0%B0%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%204%2F66&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
             <a href="https://torrent9-fr.com"></a>
           </div>
         </div>

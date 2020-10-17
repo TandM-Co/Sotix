@@ -88,6 +88,11 @@ body {
 
 .presentation-section__btn {
   margin-top: 90px;
+  padding: 10px 30px !important;
+  color: var(--white) !important;
+  border: 2px solid green !important;
+  border-radius: 40px !important;
+  background-color: transparent;
 }
 
 @media (max-width: 991px) {
@@ -327,7 +332,7 @@ body {
 }
 
 /*util style for button*/
-.btn {
+.btn-main {
   padding: 10px 30px !important;
   color: var(--white) !important;
   border: 2px solid green !important;
