@@ -43,12 +43,21 @@ body {
   display: flex;
 }
 
+.lane {
+  position: absolute;
+  top: 16%;
+  width: 100%;
+  height: 110%;
+
+  background-repeat: no-repeat;
+  background-image: url('./public/images/lane.png');
+}
+
 /*#endregion section*/
 
 /*#region presentation-section*/
 .presentation-section {
   background-image: url("public/images/BG 1.png");
-  padding-bottom: 260px;
 }
 
 .presentation-section-container {
@@ -64,8 +73,40 @@ body {
   flex-direction: column;
 }
 
+.presentation-section__about {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentation-section__about-description {
+  z-index: 2;
+}
+
+.presentation-section__about-phone {
+  z-index: 2;
+}
+
 .presentation-section__btn {
   margin-top: 90px;
+}
+
+@media (max-width: 991px) {
+  .presentation-section__about-phone {
+    max-width: 300px;
+  }
+  .presentation-section__about-description {
+    margin-bottom: 70px;
+  }
+  .lane {
+    bottom: 11%;
+    top: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .presentation-section__about-phone {
+    display: none;
+  }
 }
 
 /*#endregion presentation-section*/
@@ -111,6 +152,7 @@ body {
 .footer__developer {
   font-size: 24px;
 }
+
 /*#endregion footer*/
 
 /*#region our-services*/
@@ -128,8 +170,9 @@ body {
 }
 
 .our-services-container {
-    max-width: 1480px;
+  max-width: 1480px;
 }
+
 /*#endregion our-services*/
 
 /*#region how-we-work*/
@@ -154,6 +197,7 @@ body {
 .how-we-work-container__step {
   background-color: var(--work-step);
 }
+
 /*#endregion how-we-work*/
 
 .circle {
@@ -168,7 +212,7 @@ body {
   font-size: 36px;
 }
 
-.mapouter{
+.mapouter {
   position: relative;
   text-align: right;
   height: 328px;
@@ -181,7 +225,7 @@ body {
 
 .gmap_canvas {
   overflow: hidden;
-  background: none!important;
+  background: none !important;
   height: 451px;
 }
 
@@ -199,33 +243,27 @@ body {
 }
 
 @-webkit-keyframes swing {
-  15%
-  {
+  15% {
     -webkit-transform: translateX(5px);
     transform: translateX(5px);
   }
-  30%
-  {
+  30% {
     -webkit-transform: translateX(-5px);
     transform: translateX(-5px);
   }
-  50%
-  {
+  50% {
     -webkit-transform: translateX(3px);
     transform: translateX(3px);
   }
-  65%
-  {
+  65% {
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
   }
-  80%
-  {
+  80% {
     -webkit-transform: translateX(2px);
     transform: translateX(2px);
   }
-  100%
-  {
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -239,60 +277,61 @@ body {
 
 /*util style for layout*/
 .mt-35 {
-    margin-top: 350px;
+  margin-top: 350px;
 }
 
 .mr-6 {
-    margin-right: 60px;
+  margin-right: 60px;
 }
 
 .mt-6 {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .pt-12 {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
 .pt-8 {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .mt-4 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .mt-14 {
-    margin-top: 140px;
+  margin-top: 140px;
 }
 
 .pb-15 {
-    padding-bottom: 150px;
+  padding-bottom: 150px;
 }
 
 .fs-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .fw-800 {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .capitalize_text {
   text-transform: capitalize;
 }
 
- /*util style for link*/
+/*util style for link*/
 .tel-link, .tel-link:hover {
-   text-decoration: unset;
-   color: inherit;
- }
+  text-decoration: unset;
+  color: inherit;
+}
 
 /*util style for button*/
 .btn {
-    padding: 10px 30px !important;
-    color: var(--white) !important;
-    border: 2px solid green !important;
-    border-radius: 40px !important;
+  padding: 10px 30px !important;
+  color: var(--white) !important;
+  border: 2px solid green !important;
+  border-radius: 40px !important;
 }
+
 /*#endregion util*/
