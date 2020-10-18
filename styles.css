@@ -80,19 +80,29 @@ body {
 
 .presentation-section__about-description {
   z-index: 2;
+  padding-bottom: 100px;
 }
 
 .presentation-section__about-phone {
   z-index: 2;
 }
 
+.presentation-section__hr {
+  background-color: var(--white);
+  height: 3px;
+}
+
 .presentation-section__btn {
   margin-top: 90px;
-  padding: 10px 30px !important;
+  padding: 5px 30px 7px 30px !important;
   color: var(--white) !important;
-  border: 2px solid green !important;
+  border: 4px solid green !important;
   border-radius: 40px !important;
   background-color: transparent;
+  font-style: normal;
+  font-size: 28px;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 @media (max-width: 991px) {
@@ -166,12 +176,20 @@ body {
   flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .our-services-content__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.our-services-content__item > img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
 }
 
 .our-services-container {
@@ -205,6 +223,29 @@ body {
 
 /*#endregion how-we-work*/
 
+/*#region how-find-us*/
+.how-find-us-container {
+  line-height: 29px;
+}
+
+.how-find-us-container__contacts {
+  width: 220px;
+}
+
+.how-find-us-container__schedule {
+  width: 230px
+}
+/*#endregion how-find-us*/
+
+/*#region carousel*/
+.carousel__image {
+  height: 340px;
+  background-image: url('./public/images/Slider_img.png');
+  border-radius: 30px;
+  background-size: cover;
+}
+/*#endregion carousel*/
+
 .circle {
   height: 126px;
   width: 126px;
@@ -226,6 +267,7 @@ body {
 
 .mapouter iframe {
   width: 100% !important;
+  border-radius: 20px;
 }
 
 .gmap_canvas {
