@@ -4,7 +4,8 @@ var leaveRequestBtn = document.getElementById('leaveRequest');
 $('.owl-carousel').owlCarousel({
   items:1,
   margin:10,
-  autoHeight:true
+  autoHeight:true,
+  dots: false
 });
 
 function phoneValidation(event) {

@@ -8,6 +8,8 @@
   --pagination-circle: rgba(255, 255, 255, 0.5);
   --work-step-bg: rgba(255, 255, 255, 0.1);
   --work-step: rgba(255, 255, 255, 0.5);
+  --owl-dot: rgba(0, 0, 0, 0.5);
+;
 }
 
 body {
@@ -238,25 +240,41 @@ body {
 /*#endregion how-find-us*/
 
 /*#region carousel*/
+.owl-stage-outer {
+  margin-bottom: 120px;
+}
+.carousel__item {
+  display: flex;
+}
 .carousel__image {
+  flex-grow: 0;
   height: 340px;
   background-image: url('./public/images/Slider_img.png');
   border-radius: 30px;
   background-size: cover;
 }
-/*#endregion carousel*/
 
-.circle {
-  height: 126px;
-  width: 126px;
+.owl-dot {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  color: var(--owl-dot);
+  height: 126px !important;
+  width: 126px !important;
   background-color: var(--pagination-circle);
-  border-radius: 50%;
-  display: inline-block;
+  border-radius: 50% !important;
+  font-size: 36px !important;
 }
 
-.circle__text {
-  font-size: 36px;
+.owl-dot:not(:last-child) {
+  margin-right: 62px;
 }
+
+.owl-dot--active {
+  color: var(--white);
+  background: var(--green-light);
+}
+/*#endregion carousel*/
 
 .mapouter {
   position: relative;
