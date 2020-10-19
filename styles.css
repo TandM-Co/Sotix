@@ -73,6 +73,7 @@ body {
 
 .presentation-section__contacts {
   flex-direction: column;
+  display: flex;
 }
 
 .presentation-section__about {
@@ -120,9 +121,73 @@ body {
   }
 }
 
+.why-we-container > h2 {
+  display: inline;
+  text-align: right;
+}
+
+@media (min-width: 576px) {
+  .mobile-title {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .presentation-section__about-phone {
     display: none;
+  }
+
+  .presentation-section-container {
+    text-align: center;
+    justify-content: center;
+  }
+
+ .presentation-section__btn {
+   margin-top: 10px;
+ }
+
+  .presentation-section__contacts {
+    display: none;
+  }
+
+  .presentation-section-container > h1 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .lane {
+    display: none;
+  }
+
+  .why-we-container {
+
+  }
+
+  .why-we-container > div > h2 {
+    width: 100%;
+  }
+
+  .desktop-title {
+    display: none !important;
+  }
+
+  .mobile-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .how-we-work-container {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .owl-dots {
+    display: none !important;
+  }
+
+  .our-services-container {
+    padding-top: 0px !important;
   }
 }
 
@@ -180,6 +245,7 @@ body {
   padding-bottom: 40px;
   font-size: 20px;
   line-height: 24px;
+  border-radius: 20px;
 }
 
 .our-services-content__item {
@@ -195,24 +261,22 @@ body {
 }
 
 .our-services-container {
-  max-width: 1480px;
 }
 
 /*#endregion our-services*/
 
 /*#region how-we-work*/
 .how-we-work-content {
-  background-color: var(--work-step-bg);
+  padding: 20px 0;
+  display: flex;
   flex-wrap: wrap;
-  min-height: 330px;
+  background-color: var(--work-step-bg);
+  justify-content: center;
+  border-radius: 30px;
 }
 
-.how-we-work-container {
-  background-color: var(--work-step-bg);
-  flex-wrap: wrap;
-  min-height: 330px;
-  display: flex;
-  justify-content: center;
+.how-we-work-container .desktop-title {
+  display: inline-flex;
 }
 
 .how-we-work-container__item {
