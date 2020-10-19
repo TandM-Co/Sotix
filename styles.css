@@ -244,6 +244,7 @@ body {
   margin-bottom: 120px;
 }
 .carousel__item {
+  flex-wrap: wrap;
   display: flex;
 }
 .carousel__image {
@@ -381,8 +382,8 @@ body {
   font-weight: 800;
 }
 
-.capitalize_text {
-  text-transform: capitalize;
+.uppercase_text {
+  text-transform: uppercase;
 }
 
 /*util style for link*/
