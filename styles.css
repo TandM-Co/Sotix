@@ -64,11 +64,15 @@ body {
 
 .presentation-section-container {
   max-width: 1480px;
-  margin: auto
+  margin: auto;
+  display: flex;
 }
 
 .presentation-section__logo {
   padding-top: 50px;
+  background: linear-gradient(94.44deg, #2EC046 31.65%, #259136 70.92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .presentation-section__contacts {
@@ -130,10 +134,62 @@ body {
   .mobile-title {
     display: none;
   }
+
+  .mobile-presentation-img {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: none !important;
+  }
+
+  .presentation-section-container-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
   .presentation-section__about-phone {
+    display: none;
+  }
+
+  .footer-desktop {
+    display: none !important;
+  }
+
+  .how-to-wind-us {
+    padding-top: 10px !important;
+  }
+
+  .how-find-us-container {
+    margin-top: 10px !important;
+  }
+
+  .desktop-presentation-desc {
+    display: none;
+  }
+
+  .mobile-presentation-img {
+    margin-top: 50px;
+  }
+
+  .presentation-section-container {
+    display: none !important;
+  }
+
+  .owl-stage-outer {
+    margin-bottom: 10px !important;
+  }
+
+  .why-we-container {
+    padding-top: 10px !important;
+  }
+
+  .presentation-section__hr {
+    display: none;
+  }
+
+  .swing {
     display: none;
   }
 
@@ -206,12 +262,16 @@ body {
 }
 
 /*#region footer*/
-.footer {
+.footer-desktop {
   background-color: var(--black);
   display: flex;
   height: 200px;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-mobile {
+  background-color: var(--black);
 }
 
 .footer__contact {
@@ -292,6 +352,7 @@ body {
 /*#region how-find-us*/
 .how-find-us-container {
   line-height: 29px;
+  margin-top: 50px;
 }
 
 .how-find-us-container__contacts {

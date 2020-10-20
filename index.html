@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Sotix</title>
+  <title>PAPASOTIX</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8" />
@@ -60,8 +60,8 @@
 </div>
 
 <section class="presentation-section container-fluid ">
-  <header class="d-flex justify-content-between presentation-section-container">
-    <h1 class="presentation-section__logo">SOTIX</h1>
+  <header class="justify-content-between presentation-section-container">
+    <h1 class="presentation-section__logo">PAPASOTIX</h1>
 
     <div class="presentation-section__contacts pt-5">
       <div class="d-flex justify-content-end">
@@ -77,13 +77,33 @@
     </div>
   </header>
 
+  <header class="justify-content-center presentation-section-container-mobile">
+    <h1 class="presentation-section__logo text-center mb-5">PAPASOTIX</h1>
+
+    <div>
+      <div class="d-flex justify-content-center mb-1">
+        <img class="icon" src="public/svg/Vk_Logo.svg" alt="logo"/>
+        <img class="icon ml-3" src="public/svg/YouTube_Logo.svg" alt="youtube"/>
+        <img class="icon ml-3" src="public/svg/Instagram_Logo.svg" alt="instagram"/>
+      </div>
+
+      <div class="text-center mt-2 mb-4">
+        <a href="tel: +375-33-377-74-40" class="tel-link">+375-33-377-74-40</a><br/>
+        <address>г. Гродно, Славинского 4/66</address>
+      </div>
+    </div>
+  </header>
+
   <article class="d-flex w-100 presentation-section-container presentation-section__about">
     <div class="presentation-section__about-description">
       <h1>
         РЕМОНТ ТЕЛЕФОНОВ <br>И НОУТБУКОВ
       </h1>
       <hr class="presentation-section__hr">
-      <p class="mt-1">
+
+      <img class="mobile-presentation-img" src="./public/images/SOTIX_PHONE%201.png" />
+
+      <p class="mt-1 desktop-presentation-desc">
         заберем, Починим, Привезём ваш: <br>телефон, планшет, ноутбук <br>поменяем экран на 30% дешевле <br>конкурентов
       </p>
       <button class="presentation-section__btn" data-toggle="modal" data-target="#modal">
@@ -91,7 +111,7 @@
       </button>
     </div>
 
-    <img class="presentation-section__about-phone" src="public/images/Phone.png" alt="phone"/>
+    <img class="presentation-section__about-phone" src="public/images/sotix_phone_desktop.png" alt="phone"/>
   </article>
 </section>
 
@@ -278,7 +298,7 @@
     </div>
   </section>
 
-  <section class="section pt-8 pb-5">
+  <section class="section pt-8 pb-5 how-to-wind-us">
     <h1 class="section-title section-title-underline desktop-title">
       КАК&nbsp<span class="section-title_green">НАС</span>&nbspНАЙТИ
     </h1>
@@ -287,7 +307,7 @@
       КАК&nbsp<span class="section-title_green">НАС</span>&nbspНАЙТИ
     </h1>
 
-    <div class="section-content d-flex justify-content-between row mt-5 how-find-us-container">
+    <div class="section-content d-flex justify-content-between row how-find-us-container">
       <div class="col-12 col-sm-12 col-md-6">
         <div style="height: 450px; background-color: #C4C4C4"></div>
       </div>
@@ -328,7 +348,7 @@
   </section>
 </main>
 
-<footer class="footer container-fluid row m-0">
+<footer class="footer-desktop container-fluid row m-0">
   <div class="col-sm-12 col-md-2">
     <p class="footer__developer m-0">
       <span>&copyT&M</span>
@@ -338,7 +358,7 @@
   <div class="footer__contact col-10 justify-content-end flex-wrap">
     <div class="footer__address mr-5">
       <a class="fs-24 tel-link" href="tel:+375-33-377-74-40">+375-33-377-74-40</a>
-      <address>г. Гродно, Славинского 4/66</address>
+      <address class="mb-0">г. Гродно, Славинского 4/66</address>
     </div>
 
     <div class="footer_social d-flex">
@@ -348,7 +368,32 @@
     </div>
 
     <div class="d-flex align-items-center">
-      <p class="footer_copyright">&copySOTIX 2020</p>
+      <p class="footer_copyright">&copyPAPASOTIX 2020</p>
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-mobile container-fluid m-0 pt-3 pb-3">
+  <div class="footer__contact d-flex flex-column">
+    <div class="footer__address text-center">
+      <a class="fs-24 tel-link" href="tel:+375-33-377-74-40">+375-33-377-74-40</a>
+      <address>г. Гродно, Славинского 4/66</address>
+    </div>
+
+    <div class="footer_social d-flex justify-content-center">
+      <img class="icon" src="public/svg/Vk_Logo.svg" alt="vk-logo"/>
+      <img class="icon" src="public/svg/YouTube_Logo.svg" alt="you-tube-logo"/>
+      <img class="icon" src="public/svg/Instagram_Logo.svg" alt="instagram-logo"/>
+    </div>
+
+    <div class="d-flex justify-content-center mt-2">
+      <p class="footer__developer m-0">
+        <span>&copyT&M</span>
+      </p>
+    </div>
+
+    <div class="d-flex justify-content-center mt-1">
+      <p class="footer_copyright ml-0 mr-0">&copyPAPASOTIX 2020</p>
     </div>
   </div>
 </footer>
