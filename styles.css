@@ -60,6 +60,7 @@ body {
 /*#region presentation-section*/
 .presentation-section {
   background-image: url("public/images/BG 1.png");
+  background-size: cover;
 }
 
 .presentation-section-container {
@@ -117,7 +118,7 @@ body {
     max-width: 300px;
   }
   .presentation-section__about-description {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
   .lane {
     bottom: 11%;
@@ -133,6 +134,10 @@ body {
 @media (min-width: 576px) {
   .mobile-title {
     display: none;
+  }
+
+  .presentation-section__about-description {
+    margin-bottom: 0px !important;
   }
 
   .mobile-presentation-img {
@@ -171,6 +176,7 @@ body {
 
   .mobile-presentation-img {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .presentation-section-container {
@@ -182,7 +188,7 @@ body {
   }
 
   .why-we-container {
-    padding-top: 10px !important;
+    margin-top: 10px !important;
   }
 
   .presentation-section__hr {
@@ -485,6 +491,10 @@ body {
 
 .pt-8 {
   padding-top: 80px;
+}
+
+.mt-22 {
+  margin-top: 220px;
 }
 
 .mt-4 {
