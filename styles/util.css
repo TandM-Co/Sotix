@@ -1,0 +1,61 @@
+.mt-35 {
+    margin-top: 350px;
+}
+
+.mr-6 {
+    margin-right: 60px;
+}
+
+.mt-6 {
+    margin-top: 60px;
+}
+
+.pt-12 {
+    padding-top: 120px;
+}
+
+.pt-8 {
+    padding-top: 80px;
+}
+
+.mt-22 {
+    margin-top: 220px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-14 {
+    margin-top: 140px;
+}
+
+.pb-15 {
+    padding-bottom: 150px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.uppercase_text {
+    text-transform: uppercase;
+}
+
+/*util style for link*/
+.tel-link, .tel-link:hover {
+    text-decoration: unset;
+    color: inherit;
+}
+
+/*util style for button*/
+.btn-main {
+    padding: 10px 30px !important;
+    color: var(--white) !important;
+    border: 2px solid green !important;
+    border-radius: 40px !important;
+}

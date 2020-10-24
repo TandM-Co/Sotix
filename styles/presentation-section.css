@@ -1,0 +1,205 @@
+.presentation-section {
+    background-image: url("../public/images/presentation_section_bg.png");
+    background-size: cover;
+}
+
+.presentation-section-container {
+    max-width: 1480px;
+    margin: auto;
+    display: flex;
+}
+
+.presentation-section__logo {
+    padding-top: 50px;
+    background: linear-gradient(94.44deg, #2EC046 31.65%, #259136 70.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.presentation-section__contacts {
+    flex-direction: column;
+    display: flex;
+}
+
+.presentation-section__about {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presentation-section__about-description {
+    z-index: 2;
+    padding-bottom: 100px;
+}
+
+.presentation-section__about-phone {
+    z-index: 2;
+}
+
+.presentation-section__hr {
+    background-color: var(--white);
+    height: 3px;
+}
+
+.presentation-section__btn {
+    margin-top: 90px;
+    padding: 5px 30px 7px 30px !important;
+    color: var(--white) !important;
+    border: 4px solid green !important;
+    border-radius: 40px !important;
+    background-color: transparent;
+    font-style: normal;
+    font-size: 28px;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.why-we-container {
+    padding-top: 220px;
+    padding-bottom: 70px;
+    background-image: url("../public/images/main_bg.png");
+}
+
+.how-to-wind-us {
+    background-image: url("../public/images/third_section_bg.png");
+}
+
+@media (max-width: 991px) {
+    .presentation-section__about-phone {
+        max-width: 300px;
+    }
+    .presentation-section__about-description {
+        margin-bottom: 0;
+    }
+    .lane {
+        bottom: 11%;
+        top: unset;
+    }
+}
+
+.why-we-container > h2 {
+    display: inline;
+    text-align: right;
+}
+
+@media (min-width: 576px) {
+    .mobile-title {
+        display: none;
+    }
+
+    .presentation-section__about-description {
+        margin-bottom: 0 !important;
+    }
+
+    .mobile-presentation-img {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: none !important;
+    }
+
+    .presentation-section-container-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .presentation-section__about-phone {
+        display: none;
+    }
+
+    .footer-desktop {
+        display: none !important;
+    }
+
+    .how-to-wind-us {
+        padding-top: 10px !important;
+    }
+
+    .how-find-us-container {
+        margin-top: 10px !important;
+    }
+
+    .desktop-presentation-desc {
+        display: none;
+    }
+
+    .mobile-presentation-img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .presentation-section-container {
+        display: none !important;
+    }
+
+    .owl-stage-outer {
+        margin-bottom: 10px !important;
+    }
+
+    .why-we-container {
+        padding-top: 10px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .second-container {
+        padding-top: 10px !important;
+    }
+
+    .presentation-section__hr {
+        display: none;
+    }
+
+    .swing {
+        display: none;
+    }
+
+    .presentation-section-container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .presentation-section__btn {
+        margin-top: 10px;
+    }
+
+    .presentation-section__contacts {
+        display: none;
+    }
+
+    .presentation-section-container > h1 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .lane {
+        display: none;
+    }
+
+    .why-we-container > div > h2 {
+        width: 100%;
+    }
+
+    .desktop-title {
+        display: none !important;
+    }
+
+    .mobile-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .how-we-work-container {
+        display: flex !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .owl-dots {
+        display: none !important;
+    }
+
+    .our-services-container {
+        padding-top: 0 !important;
+    }
+}

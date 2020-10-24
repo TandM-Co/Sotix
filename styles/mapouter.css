@@ -1,0 +1,23 @@
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 328px;
+    width: 100% !important;
+}
+
+.mapouter iframe {
+    width: 100% !important;
+    border-radius: 20px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 451px;
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 24px;
+    }
+}

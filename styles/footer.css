@@ -1,0 +1,32 @@
+.footer-desktop {
+    background-color: var(--black);
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-mobile {
+    background-color: var(--black);
+}
+
+.footer__contact {
+    display: flex;
+}
+
+.footer__address {
+    text-align: end;
+}
+
+.footer_social > img {
+    margin: 0 10px 0 10px;
+}
+
+.footer_copyright {
+    margin: 0 30px 0 30px;
+    vertical-align: middle;
+}
+
+.footer__developer {
+    font-size: 24px;
+}

@@ -1,0 +1,30 @@
+.our-services-content {
+    background-color: var(--work-step-bg);
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 20px;
+}
+
+.our-services-content__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-services-content__item > img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.our-services-container {
+
+}
+
+.second-container {
+    padding-top: 70px;
+    background-image: url("../public/images/our_services_bg.png");
+}

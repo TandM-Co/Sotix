@@ -1,0 +1,24 @@
+:root {
+  --black: #1F1F1F;
+  --green: #259136;
+  --green-light: #2EC046;
+  --white: #FFFFFF;
+  --icon-bg: #6D6D6D;
+  --icon-bg-hover: #2EC046;
+  --pagination-circle: rgba(255, 255, 255, 0.5);
+  --work-step-bg: rgba(255, 255, 255, 0.1);
+  --work-step: rgba(255, 255, 255, 0.5);
+  --owl-dot: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  color: var(--white) !important;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--green) !important;
+  /*background: linear-gradient(90deg, #455A64 0.01%, rgba(31, 31, 31, 0.85) 99.99%, rgba(255, 255, 255, 0) 100%);*/
+}
+
+.icon:hover {
+  filter: invert(65%) sepia(14%) saturate(4629%) hue-rotate(81deg) brightness(97%) contrast(72%);
+}
