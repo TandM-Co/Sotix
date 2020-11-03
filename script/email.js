@@ -1,8 +1,8 @@
-emailjs.init('user_eAKi0pTSfCot9sbZUmCY3');
+emailjs.init('user_me9hPZEhm6qD28nqahUnO');
 
 var emailServiceParams = {
-    YOUR_SERVICE_ID: 'service_8xysdkp',
-    YOUR_TEMPLATE_ID: 'template_ss66jzl'
+    YOUR_SERVICE_ID: 'service_g4z3boh',
+    YOUR_TEMPLATE_ID: 'template_u997fp9'
 }
 
 var emailSuccessfullySend = `

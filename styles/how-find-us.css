@@ -10,3 +10,7 @@
 .how-find-us-container__schedule {
     width: 230px
 }
+
+.how-find-us-container__video {
+    border-radius: 20px;
+}
