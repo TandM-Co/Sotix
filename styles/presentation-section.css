@@ -54,8 +54,7 @@
 }
 
 .why-we-container {
-    padding-top: 220px;
-    padding-bottom: 70px;
+    padding: 220px 220px 70px 220px;
     background-image: url("../public/images/main_bg.png");
 }
 

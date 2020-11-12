@@ -11,6 +11,7 @@
   background-image: url('../public/images/Slider_img.png');
   border-radius: 30px;
   background-size: cover;
+  object-fit: cover;
 }
 
 .owl-dot {

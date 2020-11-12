@@ -1,18 +1,18 @@
 emailjs.init('user_me9hPZEhm6qD28nqahUnO');
 
-var emailServiceParams = {
+const emailServiceParams = {
     YOUR_SERVICE_ID: 'service_g4z3boh',
     YOUR_TEMPLATE_ID: 'template_u997fp9'
 }
 
-var emailSuccessfullySend = `
+const emailSuccessfullySend = `
   <div class="alert alert-success" role="alert">
     <h4 class="alert-heading">Письмо усмешно отправленно!</h4>
     <p>Пожалуйста ожидайте, скоро мы свяжемся с вами</p>
   </div>
 `
 
-var spinner = `
+const spinner = `
   <div class="loader-wrapper" id="loader">
     <div class="loader">Loading...</div>
   </div>
