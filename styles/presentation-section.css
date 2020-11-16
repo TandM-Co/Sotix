@@ -220,4 +220,8 @@
     .our-services-container {
         padding-top: 0 !important;
     }
+
+    .presentation-section__logo {
+        font-size: 50px;
+    }
 }
