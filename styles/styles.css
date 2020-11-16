@@ -22,3 +22,14 @@ body {
 .icon:hover {
   filter: invert(65%) sepia(14%) saturate(4629%) hue-rotate(81deg) brightness(97%) contrast(72%);
 }
+
+.how-we-work-content__item {
+  filter: invert(50%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  width: 300px;
+  transition: width 1s;
+}
+
+.how-we-work-content__item:hover {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  width: 350px;
+}

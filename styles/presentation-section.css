@@ -54,7 +54,7 @@
 }
 
 .why-we-container {
-    padding: 220px 220px 70px 220px;
+    padding: 180px 20px 40px;
     background-image: url("../public/images/main_bg.png");
 }
 
@@ -70,8 +70,10 @@
         margin-bottom: 0;
     }
     .lane {
-        bottom: 11%;
-        top: unset;
+        display: none;
+    }
+    .why-we-container {
+        padding: 0 20px 20px;
     }
 }
 
