@@ -9,6 +9,7 @@
     line-height: 90px;
     margin-bottom: 0;
     text-transform: capitalize;
+    z-index: 1000;
 }
 
 .section-title_green {
