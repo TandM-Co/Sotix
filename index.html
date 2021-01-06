@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
   <title>GoodGadget</title>
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8" />
@@ -25,21 +28,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous"/>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="./styles/footer.css">
-  <link rel="stylesheet" href="./styles/how-find-us.css">
-  <link rel="stylesheet" href="./styles/how-we-work.css">
-  <link rel="stylesheet" href="./styles/mapouter.css">
-  <link rel="stylesheet" href="./styles/our-services.css">
-  <link rel="stylesheet" href="./styles/presentation-section.css">
-  <link rel="stylesheet" href="./styles/section.css">
-  <link rel="stylesheet" href="./styles/swing.css">
-  <link rel="stylesheet" href="./styles/carousel.css">
-  <link rel="stylesheet" href="./styles/spinner.css">
-  <link rel="stylesheet" href="./styles/util.css">
-  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./lib/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="./lib/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="styles/main.css?version=0.2">
+  <link rel="stylesheet" href="./styles/footer.css?version=0.2">
+  <link rel="stylesheet" href="./styles/how-find-us.css?version=0.2">
+  <link rel="stylesheet" href="./styles/how-we-work.css?version=0.2">
+  <link rel="stylesheet" href="./styles/mapouter.css?version=0.2">
+  <link rel="stylesheet" href="./styles/our-services.css?version=0.2">
+  <link rel="stylesheet" href="./styles/presentation-section.css?version=0.2">
+  <link rel="stylesheet" href="./styles/section.css?version=0.2">
+  <link rel="stylesheet" href="./styles/swing.css?version=0.2">
+  <link rel="stylesheet" href="./styles/carousel.css?version=0.2">
+  <link rel="stylesheet" href="./styles/spinner.css?version=0.2">
+  <link rel="stylesheet" href="./styles/util.css?version=0.2">
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css?version=0.2">
+  <link rel="stylesheet" href="./lib/owl-carousel/owl.carousel.css?version=0.2">
+  <link rel="stylesheet" href="./lib/owl-carousel/owl.theme.default.min.css?version=0.2">
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -92,8 +95,8 @@
             placeholder="Номер телефона"
           >
           <small id="emailHelp" class="form-text text-muted">
-            Оставьте номер телефона и мы свяжемся с вами если вас устроит наши условия. Бесплатный выездом мастера по
-            гродно, осуществляется в день вашей заявки!
+            Оставьте номер телефона и мы свяжемся с вами, если вас устроят наши условия. Бесплатный выездом мастера по
+            гродно осуществляется в день вашей заявки!
           </small>
         </div>
       </div>
@@ -144,7 +147,9 @@
   </header>
 
   <header class="justify-content-center presentation-section-container-mobile">
-    <h1 class="presentation-section__logo text-center mb-5">GoodGadget</h1>
+    <h1 class="presentation-section__logo text-center mb-5">
+      <span class="presentation-section__logo-letter">G</span>ood<span class="presentation-section__logo-letter">G</span>adget
+    </h1>
 
     <div>
       <div class="d-flex justify-content-center mb-1">
@@ -167,21 +172,20 @@
   <article class="d-flex w-100 presentation-section-container presentation-section__about">
     <div class="presentation-section__about-description">
       <h1>
-        РЕМОНТ ТЕЛЕФОНОВ <br>ПЛАНЩЕТОВ И НОУТБУКОВ
+        РЕМОНТ ТЕЛЕФОНОВ <br>ПЛАНШЕТОВ И НОУТБУКОВ
       </h1>
       <hr class="presentation-section__hr">
 
       <a href="https://instagram.com/goodgadgetgrodno" target="_blank">
         <img
           class="mobile-presentation-img img-fluid"
-          src="./public/images/sotix_phone_desktop.png"
+          src="./public/images/SotixPhone_desktop.png"
           alt="phone"
         />
       </a>
 
-
       <p class="mt-1 desktop-presentation-desc">
-        Забираем, Делаем диагностику, Ремонтируем, Возвращаем
+        Забираем, делаем диагностику, ремонтируем, возвращаем
       </p>
       <button class="presentation-section__btn" data-toggle="modal" data-target="#modal">
         заказать услугу
@@ -191,7 +195,7 @@
     <a class="presentation-section__about-phone" href="https://instagram.com/goodgadgetgrodno" target="_blank">
       <img
         class="presentation-section__about-phone"
-        src="public/images/sotix_phone_desktop.png"
+        src="public/images/SotixPhone_desktop.png"
         alt="phone"
       />
     </a>
@@ -376,7 +380,7 @@
       </div>
 
       <div class="how-we-work-content">
-        <img class="how-we-work-content__item p-3" src="public/svg/How_we_work_step_1.svg" alt="sotix-work"/>
+        <img class="how-we-work-content__item p-3" src="public/svg/HowWe_work_step_1.svg" alt="sotix-work"/>
         <img class="how-we-work-content__item p-3" src="public/svg/How_we_work_step_2.svg" alt="sotix-work"/>
         <img class="how-we-work-content__item p-3" src="public/svg/How_we_work_step_3.svg" alt="sotix-work"/>
         <img class="how-we-work-content__item p-3" src="public/svg/How_we_work_step_4.svg" alt="sotix-work"/>
@@ -400,7 +404,7 @@
 
       <div class="col-12 col-sm-12 col-md-6">
         <h2 class="fw-800">АДРЕС</h2>
-        <p class="fs-24">Наш офис находиться по адресу: город Гродно, улица Славинского 4/66</p>
+        <p class="fs-24">Наш офис находится по адресу: город Гродно, улица Славинского 4/66</p>
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe
@@ -457,8 +461,8 @@
       </a>
     </div>
 
-    <div class="d-flex align-items-center">
-      <p class="footer_copyright">&copyGoodGadget 2020</p>
+    <div class="d-flex align-items-center footer_copyright">
+      <span class="presentation-section__logo-letter">G</span>ood<span class="presentation-section__logo-letter">G</span>adget 2021
     </div>
   </div>
 </footer>
@@ -487,7 +491,9 @@
     </div>
 
     <div class="d-flex justify-content-center mt-1">
-      <p class="footer_copyright ml-0 mr-0">&copyGoodGadget 2020</p>
+      <p class="footer_copyright ml-0 mr-0">
+        <span class="presentation-section__logo-letter">G</span>ood<span class="presentation-section__logo-letter">G</span>adget 2021
+      </p>
     </div>
   </div>
 </footer>
