@@ -20,6 +20,7 @@ const spinner = `
 
 function sendEmail(templateParams) {
     return function() {
+        ym(57422500, 'reachGoal', 'klickpoknopke');
         $('body').css('overflow', 'hidden').prepend(spinner);
         emailjs.send(
             emailServiceParams.YOUR_SERVICE_ID,
