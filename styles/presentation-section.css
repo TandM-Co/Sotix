@@ -12,6 +12,12 @@
 .presentation-section__logo {
     font-size: 70px;
     padding-top: 50px;
+    background: var(--white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.presentation-section__logo-letter {
     background: linear-gradient(94.44deg, #2EC046 31.65%, #259136 70.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

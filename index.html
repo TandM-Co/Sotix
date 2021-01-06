@@ -40,6 +40,25 @@
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./lib/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="./lib/owl-carousel/owl.theme.default.min.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r, a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(57422500, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/57422500" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
   <script defer src="./lib/emailJS.min.js"></script>
   <script defer src="./lib/jquery.min.js"></script>
   <script defer src="./lib/owl-carousel/owl.carousel.min.js"></script>
@@ -72,11 +91,14 @@
             aria-describedby="emailHelp"
             placeholder="Номер телефона"
           >
-          <small id="emailHelp" class="form-text text-muted">Оставьте номер телефона и мы свяжемся с вами</small>
+          <small id="emailHelp" class="form-text text-muted">
+            Оставьте номер телефона и мы свяжемся с вами если вас устроит наши условия. Бесплатный выездом мастера по
+            гродно, осуществляется в день вашей заявки!
+          </small>
         </div>
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-primary" href="tel:375333777440">Позвонить</a>
+        <a type="button" class="btn btn-success" href="tel:375333777440">Позвонить</a>
         <button type="button" class="btn btn-secondary" disabled id="leaveRequest">Оставить заявку</button>
       </div>
     </div>
@@ -85,7 +107,9 @@
 
 <section class="presentation-section container-fluid ">
   <header class="justify-content-between presentation-section-container">
-    <h1 class="presentation-section__logo">GoodGadget</h1>
+    <h1 class="presentation-section__logo">
+      <span class="presentation-section__logo-letter">G</span>ood<span class="presentation-section__logo-letter">G</span>adget
+    </h1>
 
     <div class="presentation-section__contacts pt-5">
       <div class="d-flex justify-content-end">
@@ -121,17 +145,14 @@
   <article class="d-flex w-100 presentation-section-container presentation-section__about">
     <div class="presentation-section__about-description">
       <h1>
-        РЕМОНТ ТЕЛЕФОНОВ <br>И НОУТБУКОВ
+        РЕМОНТ ТЕЛЕФОНОВ <br>ПЛАНЩЕТОВ И НОУТБУКОВ
       </h1>
       <hr class="presentation-section__hr">
 
       <img class="mobile-presentation-img img-fluid" src="./public/images/sotix_phone_desktop.png" alt="phone" />
 
       <p class="mt-1 desktop-presentation-desc">
-        Заберем, Починим, Привезём ваш: <br>
-        телефон, планшет, ноутбук <br>
-        поменяем экран на 30% дешевле <br>
-        конкурентов
+        Забираем, Делаем диагностику, Ремонтируем, Возвращаем
       </p>
       <button class="presentation-section__btn" data-toggle="modal" data-target="#modal">
         заказать услугу
@@ -183,6 +204,20 @@
 
       <div class="owl-stage-outer">
         <div class="owl-stage">
+
+          <div class="owl-item carousel__item">
+            <div class="mt-4 col-sm-12 col-md-6">
+              <img src="public/images/call_engine.jpg" alt="call_engine" class="carousel__image">
+            </div>
+
+            <div class="mt-4 col-sm-12 col-md-6">
+              <h3 class="ml-3 uppercase_text">вызов мастера на дом</h3>
+              <p class="ml-3 text-justify">
+                Бесплатный выезд мастера по гродно к вам на дом в течении 15-50 минут после вашей заявки,
+                мастера соблюдают правила ношения средств индивидуальной защиты, для того, что бы обезопасить вас
+              </p>
+            </div>
+          </div>
 
           <div class="owl-item carousel__item">
             <div class="mt-4 col-sm-12 col-md-6">
@@ -242,20 +277,6 @@
 
             <div class="mt-4 col-sm-12 col-md-6">
               <img src="public/images/fast_work.jpg" alt="fast-work" class="carousel__image">
-            </div>
-          </div>
-
-          <div class="owl-item carousel__item">
-            <div class="mt-4 col-sm-12 col-md-6">
-              <img src="public/images/call_engine.jpg" alt="call_engine" class="carousel__image">
-            </div>
-
-            <div class="mt-4 col-sm-12 col-md-6">
-              <h3 class="ml-3 uppercase_text">вызов мастера на дом</h3>
-              <p class="ml-3 text-justify">
-                Действует система скидок и подарков нашим частым клиентам, мы ценим вас так же, как вы цените нас,
-                ведь только благодаря вам, мы становимся лучше!
-              </p>
             </div>
           </div>
         </div>
